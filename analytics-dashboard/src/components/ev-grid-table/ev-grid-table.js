@@ -31,6 +31,7 @@ const EVGridTable = () => {
       title: "EV Make",
       dataIndex: "Make",
       key: "Make",
+      width: "7%",
     },
     {
       title: "EV Type",
@@ -51,6 +52,7 @@ const EVGridTable = () => {
       title: "Model Year",
       dataIndex: "Model Year",
       key: "Model Year",
+      width: "7%",
     },
     {
       title: "ELectric Utility",
@@ -61,6 +63,7 @@ const EVGridTable = () => {
       title: "Postal Code",
       dataIndex: "Postal Code",
       key: "Postal Code",
+      width: "7%",
     },
   ];
   const handleSearch = (event) => {
