@@ -1,0 +1,15 @@
+@use "../../assets/style" as *;
+
+.no-data-wrapper {
+    height: 50vh;
+    @include flex-column;
+    @include justify-content-center;
+    @include align-items-center;
+    gap: 2rem;
+    .no-data-image {
+      width: 10%;
+    }
+    .no-data-title {
+      @include font-style($black, 3rem, normal, 600);
+    }
+  }

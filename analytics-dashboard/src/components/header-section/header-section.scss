@@ -1,0 +1,101 @@
+@use "../../assets/style" as *;
+
+.header-section-wrapper {
+  @include justify-content-between;
+  @include align-items-center;
+  box-shadow: 0 0rem 1rem 1rem $border-black-30;
+  padding: 1rem 2rem;
+  @include media("<md") {
+    @include flex-column;
+    @include align-items-start;
+  }
+  .logo-title-section {
+    @include align-items-center;
+    gap: 1.5rem;
+    .logo {
+      width: 12%;
+    }
+
+    .title {
+      @include font-style($black, 3rem, normal, 600);
+      @include media("<md") {
+        @include font-style($black, 2rem, normal, 600);
+      }
+      @include media("<sm") {
+        @include font-style($black, 1.8rem, normal, 600);
+      }
+    }
+  }
+  .filter-export-buttons-wrapper {
+    @include align-items-center;
+    gap: 2rem;
+    @include media("<md") {
+      margin-left: auto;
+    }
+    .filter-button {
+      @include font-style($white, 1.6rem, normal, 400);
+      background-color: $indigo;
+      @include media("<md") {
+        @include font-style($white, 1.4rem, normal, 400);
+      }
+      @include media("<sm") {
+        @include font-style($white, 1.2rem, normal, 400);
+      }
+      &:hover {
+        background-color: $indigo;
+        color: $white;
+      }
+    }
+
+    .export-button {
+      @include font-style($white, 1.6rem, nornmal, 400);
+      background-color: $forest-green;
+      @include media("<md") {
+        @include font-style($white, 1.4rem, normal, 400);
+      }
+      @include media("<sm") {
+        @include font-style($white, 1.2rem, normal, 400);
+      }
+      &:hover {
+        background-color: $forest-green;
+        color: $white;
+      }
+    }
+  }
+}
+.ant-checkbox-wrapper {
+  width: 48%;
+  font-size: 1.2rem;
+}
+.filter-reset-button-wrapper {
+  @include justify-content-end;
+  @include align-items-center;
+  gap: 1rem;
+  .reset-button {
+    @include font-style($black, 1.6rem, normal, 400);
+    border-color: $light-grey;
+    @include media("<md") {
+      @include font-style($black, 1.4rem, normal, 400);
+    }
+    @include media("<sm") {
+      @include font-style($black, 1.2rem, normal, 400);
+    }
+    &:hover {
+      background-color: $white !important;
+    }
+  }
+  .filter-button {
+    @include font-style($white, 1.6rem, normal, 400);
+    background-color: $indigo;
+    @include media("<md") {
+      @include font-style($white, 1.4rem, normal, 400);
+    }
+    @include media("<sm") {
+      @include font-style($white, 1.2rem, normal, 400);
+    }
+    &:hover {
+      background-color: $indigo !important;
+      color: $white !important;
+    }
+  }
+}

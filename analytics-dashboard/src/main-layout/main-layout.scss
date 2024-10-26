@@ -1,0 +1,28 @@
+@use "../assets/style" as *;
+
+.ev-dasboard-wrapper {
+  .ant-layout-header {
+    background-color: $white;
+    width: 100%;
+    height: inherit;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
+  }
+  .ant-layout-content {
+    background-color: $white;
+    padding: 10rem 2rem 2rem;
+  }
+  .ant-layout-footer {
+    padding: 2.5rem;
+    @include justify-content-center;
+    @include font-style($black, 1.6rem, normal, 400);
+  }
+}
+.spin {
+  height: 100vh;
+  @include justify-content-center;
+  @include align-items-center;
+}
+
+

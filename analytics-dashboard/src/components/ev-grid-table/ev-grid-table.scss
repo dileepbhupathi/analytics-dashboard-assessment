@@ -1,0 +1,26 @@
+@use "../../assets/style" as *;
+
+.ev-grid-section {
+  box-shadow: 0 0rem 1rem 1rem $border-black-30;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  .search-bar-wrapper {
+    @include justify-content-between;
+    @include align-items-center;
+    margin-bottom: 2rem;
+    .grid-data-title {
+      margin: 0;
+      @include font-style($black, 2rem, normal, 600);
+      @include media("<md"){
+        @include font-style($black, 1.6rem, normal, 600);
+      }
+    }
+    .search-bar {
+      width: 20%;
+      height: 6vh;
+      @include media("<md") {
+        width: 40%;
+      }
+    }
+  }
+}
